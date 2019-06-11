@@ -68,6 +68,13 @@ app.get('/bad', (req, res) => {
   })
 })
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs'),
+    {
+      pageTitle: 'Projects'
+    }
+})
+
 // listen to port number
 // listen(port number, function)
 app.listen(port, () => {
